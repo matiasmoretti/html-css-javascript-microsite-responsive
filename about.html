@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Sora:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <title>Promotion - Georgian Pizza Delivery</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo">
+      </a>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="index.html" class="menu-item">Home</a>
+          </li>
+          <li>
+            <a href="promotion.html" class="menu-item">Signature</a>
+          </li>
+          <li>
+            <a href="about.html" class="menu-item">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="menu-item">Contact</a>
+          </li>
+          <li>
+            <a href="https://www.doordash.com/en-CA/store/pizzeria-napoletana-montr%C3%A9al-734180/" target="_blank">
+              <img src="img/doordash.png" alt="Order in Doordash" class="doordash">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button id="btn-mobile">
+        <img src="img/icon-menu-mobile.svg" alt="Menu Mobile">
+      </button>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <div class="s-banner intern">
+      <img src="img/banner-promotion.jpg" alt="Banner Promotion">
+    </div>
+
+    <section class="s-main">
+      <div class="container intern about">
+        <div class="video">
+          <video autoplay muted loop poster="./img/logo.jpg" width="607" height="340">
+            <source src="./img/pizza-video.mp4" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="text promotion">
+          <h1>We are delicious!!!!</h1>
+          <p>
+            Located in Toronto, Georgian Pizza was originally a small bar where you could find pool
+            tables and patrons playing cards. Italian immigrant workers would come to relax and enjoy
+            pizza with their families to remember the taste of their motherland.
+          </p>
+          <p>
+            Today we are known for our simplicity and the authenticity of our recipes and also offer
+            the delivery service, especially to the coldest dates. Pizza is a passion for Canadians
+            and for us, this passion has grown over the years and throughout generations. We are made
+            from history and continue doing history integrating traditional Canadian flavors and
+            innovative services to our clientele.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="main">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Logo Georgian"></a><br>
+          <p>In pizza we trust!</p>
+        </div>
+        <div class="pages">
+          <h6>Pages</h6>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="promotion.html">Signature</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h6>Social Media</h6>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="img/instagram.svg" alt="Logo Instagram">
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="img/linkedin.svg" alt="Logo Linkedin">
+                <span>Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" target="_blank">
+                <img src="img/youtube.svg" alt="Logo Youtube">
+                <span>Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="copy">
+        <p>2023 All rights reserved.</p>
+        <p>Georgian Pizza Delivery</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btnMobile = document.getElementById("btn-mobile");
+    function toggleMenu() {
+      const nav = document.getElementById("nav")
+      nav.classList.toggle("active");
+    }
+    btnMobile.addEventListener("click", toggleMenu);
+  </script>
+
+</body>
+
+</html>
