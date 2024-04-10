@@ -1,7 +1,14 @@
 
 
 jQuery(window).on("load", function () {
-    
+
+    const btnMobile = document.getElementById("btn-mobile");
+    function toggleMenu() {
+      const nav = document.getElementById("nav")
+      nav.classList.toggle("active");
+    }
+    btnMobile.addEventListener("click", toggleMenu);
+
     jQuery('#frmContact').on("submit", function (e) {
         e.preventDefault();
         //alert('Georgian Pizza Delivery', 'Thank you' + $('#name').val() + ' for you contact.');
